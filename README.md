@@ -3,7 +3,7 @@
 In this project:
 We will build a CRUD application with golang.Golang is a general-purpose programming language built for the multi-core reality of today’s computers.
 
-About Project:
+#About Project:
 
 This is a demo rest API using golang. Here we are using Gorila mux for routing, GROM for database connectivity and ORM methods.
 For authentication we will use JWT token. For run golang project first you need to run below packages
@@ -14,4 +14,4 @@ For authentication we will use JWT token. For run golang project first you need 
   4. joho/godotenv — Used to load .env files into the project
   
   To install any of this package, open terminal and run below command.
-      go get github.com/{package-name}
+     # go get github.com/{package-name}
