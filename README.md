@@ -15,3 +15,6 @@ For authentication we will use JWT token. For run golang project first you need 
   
   To install any of this package, open terminal and run below command.
      `go get github.com/{package-name}`
+     
+     
+  use env file for getting port number for running golang project. with the use of env file we are avoiding hardcoded value.
