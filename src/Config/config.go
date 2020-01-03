@@ -12,6 +12,7 @@ var (
 
 func GetConfig() {
 	var err error
+	/*calling environment file to get value*/
 	PORT, err = strconv.Atoi(os.Getenv("PORT"))
 	if err != nil {
 		log.Printf(err.Error())
