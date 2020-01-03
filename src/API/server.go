@@ -1,11 +1,16 @@
 package API
 
 import (
+	"Config"
 	"Router"
+	"fmt"
+	"log"
 	"net/http"
 )
 
 func Run() {
+	Config.GetConfig()
 	router := Router.New()
-	http.ListenAndServe(":9090", router)
+	PORT := Config.PORT
+	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%d", PORT), router))
 }
