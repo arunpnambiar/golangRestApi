@@ -1,6 +1,6 @@
 package models
 
-type user struct {
+type User struct {
 	uniqueid  uint64 `gorm:"primary_key;autoincrement" json:"userid"`
 	firstname string `gorm:"size:50;notnull" json:"firstname"`
 	lastname  string `gorm:"size:50;notnull" json:"lastname"`
