@@ -19,7 +19,7 @@ func SaveUser(w http.ResponseWriter, r *http.Request) {
 		log.Fatal(err)
 	}
 	err = connection.Debug().Model(&models.User{}).Create(&r.Body)
-	if err != nill {
+	if err != nil {
 		log.Fatal(err)
 	}
 
